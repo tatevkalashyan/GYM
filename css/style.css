@@ -1,0 +1,246 @@
+@font-face {
+    font-family:'Octin Stencil Free';
+    src: url('../font/Octin Stencil Free.eot');
+    src: url('../font/Octin Stencil Free.eot?#iefix') format('embedded-opentype'),
+    url('../font/Octin Stencil Free Regular.ttf') format('ttf'),
+    url('../font/Octin Stencil Free.woff2') format('woff2'),
+    url('../font/Octin Stencil Free.woff') format('woff'),
+    url('../font/Octin Stencil Free.svg#Octin Stencil Free') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+html, body {
+    height: 100%;
+    font-family:'Roboto', sans-serif;
+}
+
+.get-start-page {
+    background: url("../images/Mask Group 6.png");
+    background-size: 100% 100vh;
+    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    align-items: flex-end;
+    padding: 200px 15px;
+}
+.g-btn {
+    height: 44px;
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px #FFFCBF;
+    border-radius: 20px;
+    margin: 20px auto;
+    font: 500 16px/21px "Roboto";
+    color: #2A2A2A;
+    text-shadow: 0 3px 6px #00000029;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn-yellow {
+    background-color: #FFFF00;
+    color: #1d2124;
+    border: 1px solid #FFFF00;
+}
+.btn-yellow:hover {
+    background-color: #1d2124;
+    color: #FFFF00;
+    border: 1px solid #1d2124;
+}
+.btn-transparent-bordered {
+     border: 1px solid #FFFF00;
+     color: #FFFF00;
+     background-color: transparent;
+ }
+.btn-transparent-bordered:hover {
+    border: 1px solid #FFFF00;
+    color: #1d2124;
+    background-color: #FFFF00;
+}
+.register-form {
+    background-color: #1d2124;
+    position: relative;
+}
+.register-form .item {
+    background-color: #1d2124;
+    height: 100vh;
+    color: #FFFF00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register-form .item>div {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 150px 0 0;
+}
+.register-form .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    bottom: 150px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #FFFF00;
+    color: #1d2124;
+    outline: none;
+}
+.register-form .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    left: 30px;
+    background-color: transparent;
+    color: #FFFFFF;
+    outline: none;
+}
+.register-form .owl-nav button.owl-prev:after {
+    content: 'Back';
+    color: #FFFFFF;
+}
+.register-form .owl-nav button.owl-next:after {
+    content: 'Next';
+}
+.register-form .owl-nav button.owl-next.finish:after {
+    content: 'Finish';
+}
+.register-form .owl-nav button.owl-prev span,
+.register-form .owl-nav button.owl-next span {
+    display: none;
+}
+.register-form .owl-dots {
+    display: none;
+}
+.item-title {
+    font: normal normal normal 40px/48px Octin Stencil;
+    color: #FFFF00;
+    font-family: "Octin Stencil Free", sans-serif;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.item-subTitle {
+    font: normal normal 300 16px/21px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.info-text {
+    font: 400 16px/21px Roboto;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.info-text-small {
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-align: center;
+}
+.finish {
+    background-color: red;
+}
+.form-control {
+    display: block;
+    width: 80%;
+    margin: 16px auto;
+    height: 44px;
+    padding: 0 .75rem;
+    font: 400 14px/19px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+    background-color: transparent;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    border-radius: 100%;
+    background: transparent;
+    background-image: url("../images/Group 31.png");
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 0;
+    height: 0;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-image: url("../images/Group 45.svg");
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.male {
+    background-image: url("../images/Group 45.svg");
+    height: 284px;
+    width: 204px;
+}
+[type="radio"]:checked + .male {
+    background-image: url("../images/Group 45y.svg");
+}
+.female {
+    background-image: url("../images/Group 46.svg");
+    height: 284px;
+    width: 204px;
+}
+[type="radio"]:checked + .female {
+    background-image: url("../images/Group 46y.svg");
+}

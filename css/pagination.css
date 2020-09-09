@@ -1,0 +1,204 @@
+* {
+    outline: none;
+}
+@font-face {
+    font-family:'Graphie';
+    src: url('../font/Graphie-Regular.eot');
+    src: url('../font/Graphie-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Graphie-Regular.woff2') format('woff2'),
+    url('../font/Graphie-Regular.woff') format('woff'),
+    url('../font/Graphie-Regular.svg#Graphie-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
+    font-family:'Graphie Light';
+    src: url('../font/Graphie-Light.eot');
+    src: url('../font/Graphie-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/Graphie-Light.woff2') format('woff2'),
+    url('../font/Graphie-Light.woff') format('woff'),
+    url('../font/Graphie-Light.svg#Graphie-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+#pag-cover,
+#pag-cover-weight,
+#pag-cover-gym,
+#pag-cover-tall {
+    font-family: "Graphie Light",sans-serif;
+}
+
+.arr-cover {
+    width: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.arrow i {
+    display: block;
+}
+
+#pg-links-weight,
+#pg-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+#pg-links-gym,
+#pg-links-tall {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#links-weight,
+#links {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+}
+#links-gym,
+#links-tall {
+    max-width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-link {
+    position: relative;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: transparent;
+    transition: 0.2s ease background-color, 0.3s ease color;
+}
+
+.pg-link span {
+    position: relative;
+    z-index: 2;
+    opacity: 0.2;
+}
+.pg-link .opacity-04 {
+     opacity: 0.4;
+ }
+.pg-link .opacity-07 {
+    opacity: 0.7;
+}
+
+.pg-link:hover {
+    background-color: transparent;
+}
+
+.pg-link.s-hide {
+    color: rgba(255,255,255,0);
+}
+
+#m-pg-link-weight:before,
+#m-pg-link:before {
+    content: " ";
+    position: absolute;
+    z-index: 11;
+    right: 0;
+}
+#m-pg-link-gym:before {
+    content: " ";
+    position: absolute;
+    z-index: 11;
+    right: 0;
+}
+#m-pg-link-tall:before {
+    content: 'sm';
+    position: absolute;
+    z-index: 11;
+    right: 0;
+}
+
+#m-pg-link-weight,
+#m-pg-link {
+    border-left: 1px solid #FFFF00;
+    border-right: 1px solid #FFFF00;
+}
+
+#m-pg-link-gym,
+#m-pg-link-tall {
+    border-bottom: 1px solid #FFFF00;
+    border-top: 1px solid #FFFF00;
+}
+
+#m-pg-link-weight span,
+#m-pg-link span {
+    margin-left: 0;
+    opacity: 1;
+}
+#m-pg-link-gym span,
+#m-pg-link-tall span {
+    margin-left: -25px;
+    opacity: 1;
+ }
+
+#m-pg-link:after,
+#m-pg-link-weight:after,
+#m-pg-link-gym:after,
+#m-pg-link-tall:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transition: 0.3s ease right, 0.3s ease left;
+    z-index: 1;
+}
+
+#m-pg-link.left:after,
+#m-pg-link-weight.left:after,
+#m-pg-link-gym.left:after,
+#m-pg-link-tall.left:after {
+    right: 72px;
+    left: -72px;
+}
+
+#l-arrow-gym:before,
+#l-arrow-weight:before,
+#l-arrow-tall:before,
+#l-arrow:before {
+    content: url("../images/Next icon-1.svg");
+    margin-left: -5px;
+}
+#r-arrow-gym,
+#l-arrow-gym,
+#r-arrow-tall,
+#l-arrow-tall {
+    transform: rotate(90deg);
+}
+#r-arrow-gym:after,
+#r-arrow-weight:after,
+#r-arrow-tall:after,
+#r-arrow:after {
+    content: url("../images/Next icon.svg");
+}
+#links-gym .pg-link span {
+     opacity: 0;
+     display: none;
+ }
+#links-gym .pg-link:nth-child(3) {
+  font-size: 16px;
+}
+#links-gym {
+    align-items: center;
+    max-width: 200px;
+}
