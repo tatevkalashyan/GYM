@@ -1,0 +1,213 @@
+.dashboard-header {
+    height: 188px;
+    background-color: #1d2124;
+    background-image: url("../images/Group 13.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dashboard-nav.nav-pills .nav-link,
+.dashboard-nav.nav-pills .show>.nav-link {
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 0.75;
+    padding: 16px 0 10px 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.dashboard-nav.nav-pills .nav-link.active.left-menu-icon:after {
+    content: "";
+    width: 150px;
+    border-bottom: 1px solid #FFFF00;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.dashboard-nav.nav-pills .nav-link.active,
+.dashboard-nav.nav-pills .nav-link.active svg .b,
+.dashboard-nav.nav-pills .nav-link.active svg .c,
+.dashboard-nav.nav-pills .show>.nav-link {
+    color: #FFFF00;
+    background-color: transparent;
+    fill: #FFFF00;
+    stroke: transparent;
+}
+
+
+
+.dashboard-title {
+    font: normal normal normal 40px/48px Octin Stencil Free;
+    letter-spacing: 0;
+    color: #FFFF00;
+}
+.dashboard-title--info-text {
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+.left-menu {
+    flex: 0 0 300px;
+    background-color: #232323 ;
+    box-shadow: 0 3px 10px #191818;
+}
+.right-content {
+    flex: 1;
+    background-color: #1d2124;
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+}
+.dashboard-content {
+    flex: 1;
+    background-color: #1d2124;
+    color: #FFFFFF;
+}
+.card-block {
+      flex: 0 1 392px;
+      min-height: 227px;
+      display: flex;
+      margin: 35px;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #FFFFFF;
+      border-radius: 4px;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      max-width: 400px;
+
+  }
+.card-block:after {
+    content: "";
+    position: absolute;
+    border: 5px solid #FFFF00;
+    width: 100px;
+    height: 20px;
+    right: -22px;
+    bottom: 18px;
+    transform: rotate(-45deg);
+}
+.card-block.top-after {
+    flex: 0 1 460px;
+    max-width: 500px;
+    margin: 20px;
+}
+.card-block.top-after .card-block--img {
+     width: 100px;
+     height: 100px;
+ }
+.card-block.top-after .border-top {
+    border-top: 1px solid #ffffff75!important;
+}
+.card-block.top-after:after {
+    content: "";
+    top: 18px;
+    transform: rotate(45deg);
+}
+.card-block:hover {
+    border: 1px solid #FFFF00;
+    cursor: pointer;
+}
+.card-block--img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card-block--title {
+    font: 400 16px/21px Roboto;
+    letter-spacing: 0;
+    color: #FFFF00;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.dashboard-subTitle {
+    font: normal normal normal 24px/32px Roboto;
+    letter-spacing: 0;
+    color: #FFFF00;
+    text-transform: uppercase;
+}
+.card-block--exercise {
+    font: 400 16px/21px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+.nav-link svg {
+    margin-right: 16px;
+}
+.black-line {
+      width: 30%;
+      border: 2px solid black;
+      border-radius: 3px 0 0  3px;
+  }
+.yellow-line {
+    width: 25%;
+    border: 2px solid #FFFF00;
+    border-radius: 3px;
+    position: absolute!important;
+    left: 25%;
+    z-index: 11;
+}
+.yellow-line .weight-number {
+    color: #FFFF00;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+.weight-number {
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: lowercase;
+    position: absolute;
+    top: -30px;
+}
+.gray-line {
+    flex: 1;
+    border: 2px solid gray;
+    border-radius: 0 3px 3px 0;
+}
+.limit-point {
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+}
+.yellow-line .limit-point {
+    right: -20px!important;
+    left: auto;
+}
+.gray-line .limit-point {
+    right: 0!important;
+    left: auto;
+}
+.icon-triangle:before {
+    content: " ";
+    position: absolute;
+    border-top: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 10px solid #FFFFFF;
+    top: -15px;
+    left: 16px;
+}
+.btn-bordered {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 2px 8px;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+.btn-bordered:hover {
+    border: 1px solid #FFFF00;
+    color: #FFFF00;
+}

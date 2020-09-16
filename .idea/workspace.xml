@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9cbfff4-4168-4efd-b2cc-4dbae6e5cbdc" name="Default Changelist" comment="" />
+    <list default="true" id="e9cbfff4-4168-4efd-b2cc-4dbae6e5cbdc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3. Gym - registration - personal.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Group 45y.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/Group 45y.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -36,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Influencer-Networks-App-inner-pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -60,7 +69,11 @@
       <workItem from="1599460243172" duration="4190000" />
       <workItem from="1599466230631" duration="15020000" />
       <workItem from="1599538916200" duration="19129000" />
-      <workItem from="1599632512102" duration="20256000" />
+      <workItem from="1599632512102" duration="20457000" />
+      <workItem from="1599716486129" duration="7893000" />
+      <workItem from="1600083877991" duration="6464000" />
+      <workItem from="1600151142089" duration="11336000" />
+      <workItem from="1600236910269" duration="14826000" />
     </task>
     <servers />
   </component>
@@ -76,10 +89,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599480552654" />
-    <state x="969" y="289" key="FileChooserDialogImpl" timestamp="1599477650263">
+    <state x="969" y="289" key="FileChooserDialogImpl" timestamp="1600246338217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="969" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599477650263" />
+    <state x="969" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600246338217" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1599549134103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

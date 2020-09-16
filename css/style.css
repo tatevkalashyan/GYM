@@ -13,7 +13,6 @@
 }
 
 html, body {
-    height: 100%;
     font-family:'Roboto', sans-serif;
 }
 
@@ -106,12 +105,20 @@ html, body {
     color: #FFFFFF;
     outline: none;
 }
+.owl-prev:before{
+    content: url("../images/Arrow.svg");
+    position: absolute;
+    left: 10px;
+}
 .register-form .owl-nav button.owl-prev:after {
     content: 'Back';
     color: #FFFFFF;
 }
-.register-form .owl-nav button.owl-next:after {
+.register-form .owl-nav button.owl-next:before {
     content: 'Next';
+}
+.owl-next:after {
+    content: url("../images/Next icon-2.svg");
 }
 .register-form .owl-nav button.owl-next.finish:after {
     content: 'Finish';
@@ -181,15 +188,10 @@ html, body {
     left: -9999px;
 }
 [type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
+[type="radio"]:not(:checked) + label {
     position: relative;
-    padding-left: 28px;
     cursor: pointer;
-    line-height: 20px;
     display: inline-block;
-    color: #666;
-
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
