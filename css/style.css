@@ -42,6 +42,16 @@ html, body {
     cursor: pointer;
     transition: all 0.5s;
 }
+.btn-white {
+    background-color: #FFFFFF;
+    color: #1d2124;
+    border: 1px solid #FFFFFF;
+}
+.btn-white:hover {
+    background-color: #1d2124;
+    color: #FFFFFF;
+    border: 1px solid #1d2124;
+}
 .btn-yellow {
     background-color: #FFFF00;
     color: #1d2124;
@@ -245,4 +255,30 @@ html, body {
 }
 [type="radio"]:checked + .female {
     background-image: url("../images/Group 46y.svg");
+}
+
+#finish-btn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 130px;
+}
+.card-block--info-text {
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.flex-1 {
+    flex: 1;
+}
+.step3 .card-block--title {
+    font: normal normal normal 24px/32px Roboto;
+    letter-spacing: 0;
+    color: #FFFF00;
+}
+.step3 .g-btn{
+    flex: 0 0 200px;
+    outline: none;
+    margin: 20px;
 }

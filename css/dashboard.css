@@ -35,8 +35,6 @@
     stroke: transparent;
 }
 
-
-
 .dashboard-title {
     font: normal normal normal 40px/48px Octin Stencil Free;
     letter-spacing: 0;
@@ -65,20 +63,20 @@
     color: #FFFFFF;
 }
 .card-block {
-      flex: 0 1 392px;
-      min-height: 227px;
-      display: flex;
-      margin: 35px;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid #FFFFFF;
-      border-radius: 4px;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      max-width: 400px;
+    flex: 0 1 392px;
+    min-height: 227px;
+    display: flex;
+    margin: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+}
 
-  }
 .card-block:after {
     content: "";
     position: absolute;
@@ -89,11 +87,13 @@
     bottom: 18px;
     transform: rotate(-45deg);
 }
+.weight-graph,
 .card-block.top-after {
     flex: 0 1 460px;
     max-width: 500px;
     margin: 20px;
 }
+.weight-graph .card-block--img,
 .card-block.top-after .card-block--img {
      width: 100px;
      height: 100px;
@@ -101,6 +101,7 @@
 .card-block.top-after .border-top {
     border-top: 1px solid #ffffff75!important;
 }
+.weight-graph:after,
 .card-block.top-after:after {
     content: "";
     top: 18px;
@@ -130,6 +131,13 @@
     letter-spacing: 0;
     color: #FFFF00;
     text-transform: uppercase;
+}
+.dashboard-subTitle~.input-group .form-control {
+    margin-top: 0;
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding-left: 40px;
 }
 .card-block--exercise {
     font: 400 16px/21px Roboto;
@@ -213,6 +221,11 @@
 }
 @media only screen and (min-width: 1600px) {
      .w-lg-75 {
-         width: 75%;
+         width: calc(100% - 200px);
      }
 }
+
+
+
+
+

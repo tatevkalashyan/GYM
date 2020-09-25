@@ -52,7 +52,7 @@
         </div>
         <div class="tab-content right-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active w-100" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                <div class="step1">
+                <div id="step1" class="step1">
                     <div class="ml-5 px-5">
                         <div class="dashboard-title">Choose workout category</div>
                         <p class="dashboard-title--info-text">Choose category and see your exercises statistics</p>
@@ -88,16 +88,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="step2 d-none">
+                <div id="step2" class="step2 d-none">
                     <div class="ml-5 px-5">
-                        <div class="dashboard-subTitle">Strength</div>
+                        <div class="d-flex justify-content-between">
+                            <div class="dashboard-subTitle">Strength</div>
+                            <div class="input-group w-50">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-append">
+                                    <img src="images/dashboard-images/equalizer.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
                         <p class="dashboard-title--info-text">Choose category and see your exercises statistics</p>
                     </div>
                     <div class="d-flex flex-wrap ml-5 px-5 w-lg-75">
                         <div class="card-block top-after p-4">
                             <div class="d-flex mb-2 w-100">
                                 <div class="card-block--img mr-2">
-                                    <img src="images/dashboard-images/1@3x.png" alt="">
+                                    <img src="images/13.png" alt="" class="w-100">
                                 </div>
                                 <div>
                                     <div class="card-block--title mb-2">Deadlift</div>
@@ -175,6 +183,40 @@
                         </div>
                     </div>
                 </div>
+                <div id="step3" class="step3 d-none">
+                    <div class="d-flex w-lg-75 ml-5 px-5 pb-5 align-items-end flex-wrap">
+                        <div class="flex-1">
+                            <div class="card-block--title mb-2">Deadlift</div>
+                            <div class="card-block--info-text">Exercise description & statistics</div>
+                            <div class="d-flex justify-content-around mb-4 py-5">
+                                <img src="images/13.png" alt="">
+                                <img src="images/dashboard-images/1.1@3x.png" alt="">
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-center mb-5 px-lg-5">
+                                <button class="btn-bordered mr-2 mb-2">hamstrings</button>
+                                <button class="btn-bordered mr-2 mb-2">lower back</button>
+                                <button class="btn-bordered mr-2 mb-2">quadriceps</button>
+                                <button class="btn-bordered mr-2 mb-2">glutes</button>
+                            </div>
+                            <div class="weight-graph">
+                                <div class="w-100 d-flex pt-5 pb-4 px-lg-5 position-relative">
+                                    <div class="black-line w-30 position-relative"><div class="weight-number">110kg</div><div class="limit-point icon-triangle">Start</div></div>
+                                    <div class="yellow-line w25 position-relative"><div class="weight-number">+25kg</div><div class="limit-point icon-triangle">tier 1</div></div>
+                                    <div class="gray-line  position-relative"><div class="limit-point icon-triangle">Tier2</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="d-flex justify-content-around mb-4">
+                                <img src="images/greph.svg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-end px-5">
+                                <button class="g-btn  btn-white">View normatives</button>
+                                <button class="g-btn  btn-yellow">Manage tiers</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...2</div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...3</div>
@@ -193,8 +235,14 @@
 <script src="js/owl.carousel.min.js"></script>
 <script>
     $(".card-block").on("click", function() {
-        $(".step1").css("display", "none");
-        $(".step2").removeClass("d-none").css("display", "block");
+        $("#step1").addClass("d-none");
+        $("#step2").addClass("d-block").removeClass("d-none");
+    });
+    $(".step2 .card-block--title").on("click", function(e) {
+        e.stopPropagation();
+        $("#step2").removeClass("d-block").addClass("d-none");
+
+        $("#step3").removeClass("d-none").addClass("d-block");
     });
 </script>
 </body>
